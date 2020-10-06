@@ -1,6 +1,17 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
+var mysql = require("mysql");
+
+var connection = mysql.createConnection({
+  host: "localhost",
+  // port: 33060,
+  user: "root",
+  password: "liapicls135",
+  database: "jsman",
+});
+
+connection.connect();
 
 app.listen(3000, function () {
   //3000이라는 포트를 배경으로 실행됨.
