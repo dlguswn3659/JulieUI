@@ -2,26 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>email form</title>
+    <title>search form</title>
   </head>
   <body>
-    <form action="/email_post" method="post">
-      email : <input type="text" name="email" /><br />
+    <form action="/search_post" method="post">
+      search : <input type="text" name="search" /><br />
       <input type="submit" />
     </form>
 
     <botton class="ajaxsend">ajaxsend</botton>
+
+    <div class="result"></div>
 
     <script>
       document
         .querySelector(".ajaxsend")
         .addEventListener("click", function () {
           var inputdata = document.forms[0].elements[0].value;
-          sendAjax("http://localhost:3000/ajax_send_email", inputdata);
+          sendAjax("http://localhost:3000/ajax_send_search", inputdata);
         });
 
       function sendAjax(url, data) {
-        var data = { email: data };
+        var data = { search: data };
         data = JSON.stringify(data);
 
         var xhr = new XMLHttpRequest();
@@ -31,9 +33,10 @@
 
         xhr.addEventListener("load", function () {
           console.log(xhr.responseText);
-          var result = JSON.parse(xhr, responseText);
+          var result = JSON.parse(xhr.responseText);
+          // console.log("wow " + result.search);
           if (result.result !== "ok") return;
-          document.querySelector(".result").innerHTML = result.email;
+          document.querySelector(".result").innerHTML = result.search;
         });
       }
     </script>

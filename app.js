@@ -20,14 +20,15 @@ app.get("/main", function (req, res) {
   res.sendFile(__dirname + "/public/main.html");
 });
 
-app.post("/email_post", function (req, res) {
-  console.log(req.body.email);
+app.post("/search_post", function (req, res) {
+  console.log(req.body.search);
   // res.send("<h1>welcome !</h1>" + req.body.email);
-  res.render("email.ejs", { email: req.body.email });
+  res.render("search.ejs", { search: req.body.search });
 });
 
-app.post("/ajax_send_email", function (req, res) {
-  console.log(req.body.email);
-  var responseData = { result: "ok", email: req.body.email };
+app.post("/ajax_send_search", function (req, res) {
+  console.log(req.body.search);
+  console.log("hi!");
+  var responseData = { result: "ok", search: req.body.search };
   res.json(responseData);
 });
