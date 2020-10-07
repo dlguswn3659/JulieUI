@@ -31,15 +31,32 @@ app.get("/main", function (req, res) {
   res.sendFile(__dirname + "/public/main.html");
 });
 
-app.post("/search_post", function (req, res) {
-  console.log(req.body.search);
+app.post("/email_post", function (req, res) {
+  console.log(req.body.email);
   // res.send("<h1>welcome !</h1>" + req.body.email);
-  res.render("search.ejs", { search: req.body.search });
+  res.render("email.ejs", { email: req.body.email });
 });
 
-app.post("/ajax_send_search", function (req, res) {
-  console.log(req.body.search);
-  console.log("hi!");
-  var responseData = { result: "ok", search: req.body.search };
-  res.json(responseData);
+app.post("/ajax_send_email", function (req, res) {
+  var email = req.body.email;
+  var responseData = {};
+
+  //쿼리 날리자
+  var query = connection.query(
+    'select name from user where email="' + email + '"',
+    function (err, rows) {
+      if (err) throw err;
+      if (rows[0]) {
+        // console.log(rows[0].name);
+        responseData.result = "ok";
+        responseData.name = rows[0].name;
+      } else {
+        // console.log("none : " + rows[0]);
+        responseData.result = "none";
+        responseData.name = "";
+      }
+      res.json(responseData);
+    }
+  );
+  // res.json(responseData);
 });
