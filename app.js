@@ -7,6 +7,12 @@ var process_select = require("./router/process_select");
 var topic = require("./router/topic");
 var time_setting = require("./router/time_setting");
 var link_copy = require("./router/link_copy");
+var start = require("./router/start");
+var intro = require("./router/intro");
+var self_intro_timer = require("./router/self_intro_timer");
+var ice_breaking = require("./router/ice_breaking");
+var ice_breaking2 = require("./router/ice_breaking2");
+var ice_breaking_end = require("./router/ice_breaking_end");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -34,6 +40,12 @@ app.use("/process_select", process_select);
 app.use("/topic", topic);
 app.use("/time_setting", time_setting);
 app.use("/link_copy", link_copy);
+app.use("/start", start);
+app.use("/intro", intro);
+app.use("/self_intro_timer", self_intro_timer);
+app.use("/ice_breaking", ice_breaking);
+app.use("/ice_breaking2", ice_breaking2);
+app.use("/ice_breaking_end", ice_breaking_end);
 
 app.post("/email_post", function (req, res) {
   console.log(req.body.email);
