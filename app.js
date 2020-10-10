@@ -13,6 +13,7 @@ var self_intro_timer = require("./router/self_intro_timer");
 var ice_breaking = require("./router/ice_breaking");
 var ice_breaking2 = require("./router/ice_breaking2");
 var ice_breaking_end = require("./router/ice_breaking_end");
+var idea_board = require("./router/idea_board");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -46,6 +47,7 @@ app.use("/self_intro_timer", self_intro_timer);
 app.use("/ice_breaking", ice_breaking);
 app.use("/ice_breaking2", ice_breaking2);
 app.use("/ice_breaking_end", ice_breaking_end);
+app.use("/idea_board", idea_board);
 
 app.post("/email_post", function (req, res) {
   console.log(req.body.email);
