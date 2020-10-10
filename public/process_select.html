@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="
+        width=device-width,
+        initial-scale=1"
+    />
+    <title>process_select.html</title>
+    <style type="text/css">
+      BackGroundBlock {
+        width: 100%;
+        height: flex;
+        background-color: #ffc107;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 50px;
+      }
+
+      InputBlock {
+        width: 100%;
+        height: full;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
+
+      TitleBlock {
+        width: 100%;
+        height: 100px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
+
+      TopBlock {
+        width: 100%;
+        height: 300px;
+        background-color: #ffc107;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 40px;
+      }
+
+      ButtonLine {
+        display: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        font-family: "Nanum Gothic";
+        font-weight: 200;
+        color: white;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        vertical-align: center;
+      }
+
+      ButtonBlock {
+        outline: none;
+        border: none;
+
+        border-radius: 10px;
+
+        width: 200px;
+        height: 200px;
+
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 3%;
+        margin-right: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        color: black;
+
+        font-size: 10px;
+        font-family: "Nanum Gothic";
+        font-weight: 200;
+
+        -webkit-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+        box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+      }
+
+      TextBox {
+        font-size: 25px;
+        font-family: "Nanum Gothic";
+        font-weight: 700;
+        color: black;
+        padding-bottom: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      Divider {
+        border-bottom: 0px solid rgba(138, 138, 138, 0.5);
+        margin-bottom: 60px;
+      }
+
+      Divider2 {
+        width: 100%;
+        height: 100px;
+        background-color: #ffc107;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <>
+      <TopBlock></TopBlock>
+      <BackGroundBlock>
+          <TitleBlock>
+            <span>Nice To Meet you, Julie</span>
+          </TitleBlock>
+      </BackGroundBlock>
+      <BackGroundBlock>
+          <TitleBlock>
+            <span>Which type of collaboration will you do, today?</span>
+          </TitleBlock>
+        <Divider></Divider>
+      </BackGroundBlock>
+      <Divider2></Divider2>
+      <BackGroundBlock>
+          <ButtonLine>
+            <ButtonBlock>
+              <Link to={`${match.url}/ideation`}>
+                <TextBox>Ideation</TextBox>
+                <TextBox> </TextBox>
+              </Link>
+            </ButtonBlock>
+            <ButtonBlock>
+              <href to="/yesno">
+                <TextBox>Design</TextBox>
+                <TextBox>Thinking</TextBox>
+              </href>
+            </ButtonBlock>
+            <ButtonBlock>
+              <href to="/rouletteList">
+                <TextBox>Agile</TextBox>
+                <TextBox> </TextBox>
+              </href>
+            </ButtonBlock>
+          </ButtonLine>
+      </BackGroundBlock>
+      <Divider2></Divider2>
+      <BackGroundBlock>
+          <ButtonLine>
+            <ButtonBlock>
+              <href to="/filter">
+                <TextBox>Lunch</TextBox>
+                <TextBox>Menu</TextBox>
+              </href>
+            </ButtonBlock>
+            <ButtonBlock>
+              <href to="/yesno">
+                <TextBox>Brainstorming</TextBox>
+                <TextBox> </TextBox>
+              </href>
+            </ButtonBlock>
+            <ButtonBlock>
+              <href to="/rouletteList">
+                <TextBox>Google</TextBox>
+                <TextBox>Sprint</TextBox>
+              </href>
+            </ButtonBlock>
+          </ButtonLine>
+      </BackGroundBlock>
+      <TopBlock></TopBlock>
+    </Divider2>
+  </body>
+</html>

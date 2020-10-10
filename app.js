@@ -3,6 +3,10 @@ var app = express();
 var bodyParser = require("body-parser");
 var mysql = require("mysql");
 var main = require("./router/main");
+var process_select = require("./router/process_select");
+var topic = require("./router/topic");
+var time_setting = require("./router/time_setting");
+var link_copy = require("./router/link_copy");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -26,6 +30,10 @@ app.set("view engine", "ejs");
 
 app.use("/", main);
 app.use("/main", main);
+app.use("/process_select", process_select);
+app.use("/topic", topic);
+app.use("/time_setting", time_setting);
+app.use("/link_copy", link_copy);
 
 app.post("/email_post", function (req, res) {
   console.log(req.body.email);

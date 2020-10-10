@@ -1,0 +1,59 @@
+.toggle_btn_container {
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 100px;
+  background: #ffc107;
+}
+
+.toggle_input {
+  display: none;
+}
+
+.toggle_input + .toggle_label {
+  outline: 0;
+  display: block;
+  width: 2em;
+  height: 1em;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle_input + .toggle_label:after,
+.toggle_input + .toggle_label:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+
+.toggle_input + .toggle_label:after {
+  left: 0;
+}
+
+.toggle_input + .toggle_label:before {
+  display: none;
+}
+
+.toggle_input:checked + .toggle_label:after {
+  left: 50%;
+}
+
+.toggle_input + .toggle_label {
+  background: #b8b8b8;
+  border-radius: 2em;
+  padding: 2px;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+}
+
+.toggle_input + .toggle_label:after {
+  border-radius: 50%;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.toggle_input:checked + .toggle_label {
+  background: #36ec73;
+}
