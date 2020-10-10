@@ -11,7 +11,7 @@
         width=device-width,
         initial-scale=1"
     />
-    <title>individual_idea.html</title>
+    <title>breaktime.html</title>
     <style type="text/css">
       BackGroundBlock {
         width: 100%;
@@ -188,12 +188,12 @@ top: 1170px;
       -webkit-border-radius: 450px;
       -moz-border-radius: 450px;
       border-radius: 450px;
-      background:#EB5757;
+      background: #34cd63;
       border : 0 0 0 0;
       position: absolute;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-left: 1200px;
-top: 250px;
+left: 800px;
+top: 200px;
     }
 
     #circle2 {
@@ -240,58 +240,7 @@ top: 1170px;
   </head>
   <body>
     <TopBlock></TopBlock>
-    <BackGroundBlock2>
-        <TitleBlock2>
-          <span style="color:#F2C94C">JH's Ideas</span>
-        </TitleBlock2>
-      <Divider></Divider>
-    </BackGroundBlock2>
-    <Divider2></Divider2>
-    <BackGroundBlock>
-        <ButtonLine>
-          <ButtonBlock>
-              <Triangle style="background-color: #EB5757;
-              color: #EB5757;">das</Triangle>
-              <ButtonLine></ButtonLine>
-              <TextBox>Corona Blue</TextBox>
-              <ButtonLine></ButtonLine>
-              <TextBox2>Jinhyuk</TextBox2>
-              <ButtonLine></ButtonLine>
-              <Divider></Divider>
-              <TextBox3>I need some coffee...</TextBox3>
-          </ButtonBlock>
-          
-        </ButtonLine>
-    </BackGroundBlock>
-    <Divider2></Divider2>
-    <BackGroundBlock>
-        <ButtonLine>
-          <ButtonBlock>
-            <href to="/filter">
-              <Triangle style="background-color:#EB5757;
-              color: #EB5757;">das</Triangle>
-              <ButtonLine></ButtonLine>
-              <TextBox>Co-wordking for non</TextBox>
-              <ButtonLine></ButtonLine>
-              <TextBox>IT workers</TextBox>
-              <ButtonLine></ButtonLine>
-                  <TextBox2>Jinhyuk</TextBox2>
-            </href>
-          </ButtonBlock>
-          <ButtonBlock>
-              <href to="/filter">
-                  <Triangle style="background-color: #EB5757;
-              color:#EB5757;">das</Triangle>
-              <ButtonLine></ButtonLine>
-                  <TextBox>Mini game</TextBox>
-                  <ButtonLine></ButtonLine>
-                  <TextBox2>Jinhyuk</TextBox2>
-              </href>
-            </ButtonBlock>
-        </ButtonLine>
-    </BackGroundBlock>
-    <TopBlock></TopBlock>
-  </Divider2>
+    
       <div id="circle" ></div>
         
         <script>
@@ -307,8 +256,8 @@ top: 1170px;
                  <g transform="translate(110,110)">
                      
                     <circle r="100" class="e-c-base"><div class="display-remain-time" style="position: absolute;
-                        left: 1400px;
-                        top: 570px;color:white; font-size:200px; display: flex;
+                        left: 1000px;
+                        top: 520px;color:white; font-size:200px; display: flex;
                       align-items: center;
                       justify-content: center;">01:30</div></circle>
                     <g transform="rotate(-90)">
@@ -332,20 +281,19 @@ top: 1170px;
                  </g>
               </svg>
             </div>
+            <div style="position: absolute;
+            left: 1070px;
+            top: 730px;color:white; font-size:70px; display: flex;font-weight: 600;
+          align-items: center;
+          justify-content: center;">Break Time</div>
         </BackGroundBlock>
-        <button style="position: absolute;
-        left: 1930px;
-        top: 660px;background: white; width: 350px; height: 130px; font-weight: 900;
-        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-          border-radius: 80px; color:black; font-family: 'Roboto'; font-size: 40px;">START</button>
-      <Divider2></Divider2>
-      <BackGroundBlock2>
-        <emogi>🙈 😿 😄   ▼</emogi>
-        <button id="circle2"  value="BACK" onClick="history.go(-1)">&lt;</button>
-        <button id="circle3"  onclick="location.href='indi2_idea.html'">&gt;</button>
-      </BackGroundBlock2>
+        <Divider2></Divider2>
       <TopBlock></TopBlock>
-      
+      <BackGroundBlock2>
+      <emogi>🙈 😿 😄   ▼</emogi>
+      <button id="circle2"  value="BACK" onClick="history.go(-1)">&lt;</button>
+      <button id="circle3"  onclick="location.href='final_vote.html'">&gt;</button>
+    </BackGroundBlock2>
     
         
     <script>
@@ -380,7 +328,7 @@ top: 1170px;
     
     let intervalTimer;
     let timeLeft;
-    let wholeTime = 300; // manage this to set the whole time 
+    let wholeTime = 900; // manage this to set the whole time 
     let isPaused = false;
     let isStarted = false;
     

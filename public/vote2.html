@@ -10,7 +10,7 @@
         width=device-width,
         initial-scale=1"
     />
-    <title>idea_board.html</title>
+    <title>vote2.html</title>
     <style type="text/css">
       BackGroundBlock {
         width: 100%;
@@ -169,31 +169,39 @@
         font-size: 40px;
       }
     </style>
+    <script>
+        const title1 = document.querySelector("#title1");
+ 
+ // handleResize 함수를 만든다.
+ function handleClick(){
+     title1.style.border.color = 'blue';
+ }  
+  
+ // id="title" 을 클릭하면 이벤트를 발생시킨다. 
+ // 이벤트의 내용은 handleClick()함수에 담고 있다.
+ title1.addEventListener("click", handleClick);
+    </script>
   </head>
   <body>
       <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
       <BackGroundBlock2>
           <TitleBlock>
-            <span>Idea board</span>
+            <span>Vote for 2 of your favorite ideas</span>
           </TitleBlock>
       </BackGroundBlock2>
-      <BackGroundBlock2>
-          <TitleBlock2>
-            <span>Project idea for JunctionX Hackerthon</span>
-          </TitleBlock2>
-        <Divider></Divider>
-      </BackGroundBlock2>
+      <TopBlock></TopBlock>
       <BackGroundBlock2>
           <TitleBlock3>
-          <button style="background: #EB5757; width: 200px; height: 80px;
+          <button style="background: #C8D961; width: 200px; height: 80px;
           box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
-          border-radius: 40px; color: white; font-family: 'Roboto'; font-size: 35px;" onclick="location.href='individual_idea.html'">PITCH</button>
+          border-radius: 40px; color: white; font-family: 'Roboto'; font-size: 35px;" onclick="location.href='vote_result.html'">RESULT</button>
         </TitleBlock3>
         </BackGroundBlock2>
       <Divider2></Divider2>
       <BackGroundBlock>
           <ButtonLine>
-            <ButtonBlock>
+            <ButtonBlock type="button" value="버튼" id="button" onclick="document.getElementById('button').style.backgroundColor='#C8D961';">
                 <Triangle style="background-color: #EB5757;
                 color: #EB5757;">das</Triangle>
                 <ButtonLine></ButtonLine>
@@ -204,7 +212,7 @@
                 <Divider></Divider>
                 <TextBox3>I need some coffee...</TextBox3>
             </ButtonBlock>
-            <ButtonBlock>
+            <ButtonBlock type="button" value="버튼" id="button2" onclick="document.getElementById('button2').style.backgroundColor='#C8D961';">
               <href to="/yesno">
                 <Triangle style="background-color: #F2C94C;
                 color: #F2C94C;">das</Triangle>
@@ -216,7 +224,7 @@
                 <TextBox2>Justin</TextBox2>
               </href>
             </ButtonBlock>
-            <ButtonBlock>
+            <ButtonBlock type="button" value="버튼" id="button3" onclick="document.getElementById('button3').style.backgroundColor='#C8D961';">
               <href to="/rouletteList">
                 <Triangle style="background-color: #EB5757;
                 color: #EB5757;">das</Triangle>
@@ -228,7 +236,7 @@
                 <TextBox2>JH</TextBox2>
               </href>
             </ButtonBlock>
-            <ButtonBlock>
+            <ButtonBlock type="button" value="버튼" id="button4" onclick="document.getElementById('button4').style.backgroundColor='#C8D961';">
                 <href to="/filter">
                     <Triangle style="background-color: #EB5757;
                 color: #EB5757;">das</Triangle>
@@ -240,57 +248,11 @@
               </ButtonBlock>
           </ButtonLine>
       </BackGroundBlock>
-      <Divider2></Divider2>
-      <BackGroundBlock>
-          <ButtonLine>
-            <ButtonBlock>
-              <href to="/filter">
-                <Triangle style="background-color: #F2C94C;
-                color: #F2C94C;">das</Triangle>
-                <ButtonLine></ButtonLine>
-                <TextBox>Gentrification</TextBox>
-                <ButtonLine></ButtonLine>
-                    <TextBox2>Justin</TextBox2>
-              </href>
-            </ButtonBlock>
-            <ButtonBlock>
-                <href to="/filter">
-                    <Triangle style="background-color: #2F80ED;
-                color: #2F80ED;">das</Triangle>
-                <ButtonLine></ButtonLine>
-                    <TextBox>Matching with</TextBox>
-                    <ButtonLine></ButtonLine>
-                    <TextBox>Skyscanner</TextBox>
-                    <ButtonLine></ButtonLine>
-                    <TextBox2>Hyunju</TextBox2>
-                </href>
-              </ButtonBlock>
-            <ButtonBlock>
-              <href to="/yesno">
-                <Triangle style="background-color: #2F80ED;
-                color: #2F80ED;">das</Triangle>
-                <ButtonLine></ButtonLine>
-                <TextBox>Flower shop</TextBox>
-                <ButtonLine></ButtonLine>
-                <TextBox>platform</TextBox>
-                <ButtonLine></ButtonLine>
-                    <TextBox2>Hyunju</TextBox2>
-              </href>
-            </ButtonBlock>
-            <ButtonBlock>
-              <href to="/rouletteList">
-                <Triangle style="background-color: #F2C94C;
-                color: #F2C94C;">das</Triangle>
-                <ButtonLine></ButtonLine>
-                <TextBox>Subtitle for online</TextBox>
-                <ButtonLine></ButtonLine>
-                <TextBox>meeting</TextBox>
-                <ButtonLine></ButtonLine>
-                    <TextBox2>Hyunju</TextBox2>
-              </href>
-            </ButtonBlock>
-          </ButtonLine>
-      </BackGroundBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
       <TopBlock></TopBlock>
     </Divider2>
   </body>

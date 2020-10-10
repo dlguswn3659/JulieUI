@@ -16,6 +16,17 @@ var ice_breaking_end = require("./router/ice_breaking_end");
 var idea_board = require("./router/idea_board");
 var first_idea = require("./router/first_idea");
 var individual_idea = require("./router/individual_idea");
+var indi2_idea = require("./router/indi2_idea");
+var re_idea_board = require("./router/re_idea_board");
+var discussion2 = require("./router/discussion2");
+var twodiscussion2 = require("./router/twodiscussion2");
+var longideaboard = require("./router/longideaboard");
+var vote1 = require("./router/vote1");
+var vote2 = require("./router/vote2");
+var vote_result = require("./router/vote_result");
+var breaktime = require("./router/breaktime");
+var final_vote = require("./router/final_vote");
+var meeting_report = require("./router/meeting_report");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -52,6 +63,17 @@ app.use("/ice_breaking_end", ice_breaking_end);
 app.use("/idea_board", idea_board);
 app.use("/first_idea", first_idea);
 app.use("/individual_idea", individual_idea);
+app.use("/indi2_idea", indi2_idea);
+app.use("/re_idea_board", re_idea_board);
+app.use("/discussion2", discussion2);
+app.use("/twodiscussion2", twodiscussion2);
+app.use("/longideaboard", longideaboard);
+app.use("/vote1", vote1);
+app.use("/vote2", vote2);
+app.use("/vote_result", vote_result);
+app.use("/breaktime", breaktime);
+app.use("/final_vote", final_vote);
+app.use("/meeting_report", meeting_report);
 
 app.post("/email_post", function (req, res) {
   console.log(req.body.email);

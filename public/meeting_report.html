@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="
+        width=device-width,
+        initial-scale=1"
+    />
+
+    <title>meeting_report.html</title>
+    <style type="text/css">
+      BackGroundBlock {
+        width: 100%;
+        padding-left: 6%;
+        height: flex;
+        background-color: #f8f8f8;
+        display: flex;
+        color: black;
+        font-size: 50px;
+      }
+
+      BackGroundBlock2 {
+        width: 100%;
+        padding-left: 6%;
+        height: flex;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 50px;
+      }
+
+      InputBlock {
+        width: 100%;
+        height: full;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
+
+      TitleBlock {
+        width: 100%;
+        height: 100px;
+        font-weight: 600;
+        display: flex;
+        color: black;
+      }
+
+      TopBlock {
+        width: 100%;
+        height: 300px;
+        background-color:#f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 40px;
+      }
+
+      ButtonLine {
+        display: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        font-family: "Nanum Gothic";
+        font-weight: 200;
+        color: white;
+        padding-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        vertical-align: center;
+      }
+
+      ButtonBlock {
+        outline: none;
+        border: none;
+
+        border-radius: 10px;
+
+        width: 200px;
+        height: 200px;
+
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 3%;
+        margin-right: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        color: black;
+
+        font-size: 10px;
+        font-family: "Nanum Gothic";
+        font-weight: 200;
+
+        -webkit-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+        box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+      }
+
+      TextBox {
+        font-size: 25px;
+        font-family: "Nanum Gothic";
+        font-weight: 700;
+        color: black;
+        padding-bottom: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      Divider {
+        border-bottom: 0px solid rgba(138, 138, 138, 0.5);
+        margin-bottom: 60px;
+      }
+
+      Divider2 {
+        width: 100%;
+        height: 100px;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 40px;
+      }
+
+      #circle2 {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      border : 0 0 0 0;
+      background: white;
+      color: #34cd63;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+
+        vertical-align: center;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 1900px;
+top: 1170px;
+font-size : 70px;
+    }
+
+    #circle3 {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      background: white;
+      color: #34cd63;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size : 70px;
+        vertical-align: center;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 2100px;
+top: 1170px;
+    }
+
+    report {
+        /* Rectangle 45 */
+        display: flex;
+        width: 80%;
+        height: 100px;
+        align-items: center;
+        font-size : 30px;
+        color: gray;
+        padding-left: 100px;
+background: #FFFFFF;
+box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+border-radius: 40px;
+    }
+
+    download {
+        /* 연두 */
+        display: flex;
+        margin-left: 70%;
+        height: 100px;
+        width: 13%;
+        font-size : 30px;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        font-weight: 800;
+background: #C8D961;
+box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+border-radius: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <>
+    <TopBlock></TopBlock>
+    <BackGroundBlock>
+      <Bounce>
+        <TitleBlock>
+          <span style="font-size:60px; font-weight:900;">Great Job Everyone!</span>
+        </TitleBlock>
+      </Bounce>
+    </BackGroundBlock>
+    <TopBlock style="height:150px"></TopBlock>
+    <BackGroundBlock>
+      <Bounce>
+        <TitleBlock>
+          <span style="margin-left: 30px; font-weight: 700;">Meeting Report</span>
+        </TitleBlock>
+      </Bounce>
+      <Divider></Divider>
+    </BackGroundBlock>
+    <BackGroundBlock2>
+        <report>Project for JunctionX seoul 2020</report>
+    </BackGroundBlock2>
+    <TopBlock style="height: 80px;"></TopBlock>
+    <BackGroundBlock>
+        <download>DOWNLOAD</download>
+    </BackGroundBlock>
+    <TopBlock></TopBlock>
+    <TopBlock></TopBlock>
+  </>
+  </body>
+</html>
