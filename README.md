@@ -1,6 +1,6 @@
 # nodejs
 
-cmd에
+cmd에 
 
 nodemon app.js
 
