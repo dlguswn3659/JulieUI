@@ -27,6 +27,15 @@ var vote_result = require("./router/vote_result");
 var breaktime = require("./router/breaktime");
 var final_vote = require("./router/final_vote");
 var meeting_report = require("./router/meeting_report");
+var ideationtime = require("./router/ideationtime");
+var ment4 = require("./router/ment4");
+var ment3 = require("./router/ment3");
+var ment2 = require("./router/ment2");
+var ment1 = require("./router/ment1");
+var introduce1 = require("./router/introduce1");
+var introduce2 = require("./router/introduce2");
+var people = require("./router/people");
+var hello = require("./router/hello");
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -74,6 +83,15 @@ app.use("/vote_result", vote_result);
 app.use("/breaktime", breaktime);
 app.use("/final_vote", final_vote);
 app.use("/meeting_report", meeting_report);
+app.use("/ideationtime", ideationtime);
+app.use("/ment4", ment4);
+app.use("/ment3", ment3);
+app.use("/ment2", ment2);
+app.use("/ment1", ment1);
+app.use("/introduce2", introduce2);
+app.use("/introduce1", introduce1);
+app.use("/people", people);
+app.use("/hello", hello);
 
 app.post("/email_post", function (req, res) {
   console.log(req.body.email);

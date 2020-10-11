@@ -10,15 +10,14 @@
         initial-scale=1"
     />
 
-    <title>intro.html</title>
+    <title>ment3.html</title>
     <style type="text/css">
       BackGroundBlock {
         width: 100%;
+        padding-left: 6%;
         height: flex;
-        background-color: #ffc107;
+        background-color: #f8f8f8;
         display: flex;
-        align-items: center;
-        justify-content: center;
         color: black;
         font-size: 50px;
       }
@@ -37,15 +36,13 @@
         height: 100px;
         font-weight: 600;
         display: flex;
-        align-items: center;
-        justify-content: center;
         color: black;
       }
 
       TopBlock {
         width: 100%;
         height: 300px;
-        background-color: #ffc107;
+        background-color:#f8f8f8;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -117,13 +114,53 @@
       Divider2 {
         width: 100%;
         height: 100px;
-        background-color: #ffc107;
+        background-color: #f8f8f8;
         display: flex;
         align-items: center;
         justify-content: center;
         color: black;
         font-size: 40px;
       }
+
+      #circle2 {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      border : 0 0 0 0;
+      background: white;
+      color: #34cd63;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+
+        vertical-align: center;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 1900px;
+top: 1170px;
+font-size : 70px;
+    }
+
+    #circle3 {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      background: white;
+      color: #34cd63;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size : 70px;
+        vertical-align: center;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 2100px;
+top: 1170px;
+    }
     </style>
   </head>
   <body>
@@ -132,54 +169,18 @@
     <BackGroundBlock>
       <Bounce>
         <TitleBlock>
-          <span>Today we will be work</span>
+          <span>Cool! Now we are ready to collaborate!</span>
         </TitleBlock>
       </Bounce>
     </BackGroundBlock>
-    <BackGroundBlock>
-      <Bounce>
-        <TitleBlock>
-          <span>together to find a great idea</span>
-        </TitleBlock>
-      </Bounce>
-      <Divider></Divider>
-    </BackGroundBlock>
-    <BackGroundBlock>
-        <Bounce>
-          <TitleBlock>
-            <span>for the JunctionX hackathon!</span>
-          </TitleBlock>
-        </Bounce>
-        <Divider></Divider>
-      </BackGroundBlock>
-    <Divider2></Divider2>
-    <BackGroundBlock>
-        <Bounce>
-          <TitleBlock>
-            <span>First let's get to know each</span>
-          </TitleBlock>
-        </Bounce>
-        <Divider></Divider>
-      </BackGroundBlock>
-      <BackGroundBlock>
-          <Bounce>
-            <TitleBlock>
-              <span>other and prepare for</span>
-            </TitleBlock>
-          </Bounce>
-          <Divider></Divider>
-        </BackGroundBlock>
-        <BackGroundBlock>
-            <Bounce>
-              <TitleBlock>
-                <span>a fun ideation Sprint</span>
-              </TitleBlock>
-            </Bounce>
-            <Divider></Divider>
-          </BackGroundBlock>
-          <BackGroundBlock>
-            <button style="width: 700px; height: 150px; font-size: 40px; background-color: white; font-weight: 600; margin-top: 50px;" onclick="location.href='self_intro_timer.html'">Next</button >
-        </BackGroundBlock>
+      <BackGroundBlock2>
+        <button id="circle2"  value="BACK" onClick="history.go(-1)">&lt;</button>
+        <button id="circle3"  onclick="location.href='ment4.html'">&gt;</button>
+      </BackGroundBlock2>
+    <TopBlock></TopBlock>
+    <TopBlock></TopBlock>
+    <TopBlock></TopBlock>
+    <TopBlock></TopBlock>
     <TopBlock></TopBlock>
     <TopBlock></TopBlock>
   </>
