@@ -39,7 +39,7 @@ var hello = require("./router/hello");
 
 var connection = mysql.createConnection({
   host: "localhost",
-  port: process.env.PORT || 8080,
+  port: process.env.PORT || 3000,
   user: "root",
   password: "liapicls135",
   database: "jsman",
