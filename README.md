@@ -1,8 +1,7 @@
 # nodejs
 
-cmd에 
-
+cmd에서
 nodemon app.js
+로 확인하시면 될 것 같아여
 
-하셔서 확인하시면 될 것 같아여
-http://localhost:3000/~~~~블라블라
+주소별로 확인할 수 있어유..

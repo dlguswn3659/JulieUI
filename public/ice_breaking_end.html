@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <style>
-
-        .urlCopyBtn {
-            font-weight:normal;			    
-            color:gray;
-            text-decoration:none;
-            font-size:12px;	
-        }
-        .urlCopyBtnIcon {
-            border:1px solid gray;
-            border-radius:3px;
-            padding:0px 2px 1px 2px;
-            color:white;
-            background-color:gray;	
-        }
-        .urlCopyBtnIcon a {
-            color:white;
-        }
-    
-    </style>
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta
@@ -30,7 +9,8 @@
         width=device-width,
         initial-scale=1"
     />
-    <title>link_copy.html</title>
+
+    <title>ice_breaking.html</title>
     <style type="text/css">
     header {
             width: 95%;
@@ -226,40 +206,24 @@
     <BackGroundBlock>
       <Bounce>
         <TitleBlock>
-          <span>Share link with team / Participants</span>
+          <span>Cool! Now we are</span>
         </TitleBlock>
       </Bounce>
     </BackGroundBlock>
     <BackGroundBlock>
-        <Bounce>
-          <TitleBlock>
-            <span>Copy the link below.</span>
-          </TitleBlock>
-        </Bounce>
-      </BackGroundBlock>
-    <Divider2></Divider2>
+      <Bounce>
+        <TitleBlock>
+          <span>are secertly proud of?</span>
+        </TitleBlock>
+      </Bounce>
+      <Divider></Divider>
+    </BackGroundBlock>
+    <TopBlock></TopBlock>
     <BackGroundBlock>
-        <fieldset style="font-size:20px; margin:50px; padding:30px">
-            <legend style="font-size:30px">Current URL</legend>
-            <script type="text/javascript">
-                var s = location.href;
-                document.writeln(s);
-                </script>
-        </fieldset>
-        
+        <button style="width: 700px; height: 150px; font-size: 40px; background-color: white; font-weight: 600;" onclick="location.href='ice_breaking_end.html'">Next</button >
     </BackGroundBlock>
     <TopBlock></TopBlock>
     <TopBlock></TopBlock>
   </>
   </body>
-  <script type="text/javascript">
-    $('.urlCopyBtn').click(function(){	
-        var urlAddress= $('#urlAddress');
-        urlAddress.css('display','block').select();
-        document.execCommand("Copy");
-        urlAddress.css('display','none');
-        alert('URL 주소가 복사 되었습니다');	
-        return false;
-    });
-    </script>
 </html>

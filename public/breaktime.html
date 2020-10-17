@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="self_intro_timer.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="
+        width=device-width,
+        initial-scale=1"
+    />
+    <title>breaktime.html</title>
+    <style type="text/css">
+    header {
+            width: 95%;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            color: black;
+            font-size: 35px;
+            position: absolute;
+            left: 50vw;
+            transform: translateX(-50%);
+            z-index: 1;
+}
+        .headerback {
+            width: 100vw;;
+            height: 80px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            
+            position: absolute;
+            left: 50vw;
+            transform: translateX(-50%);
+            z-index: 0;
+}
+        
+
+        .menu {
+            margin-left: 123px;
+            width: 40px;
+            height: 30px;
+
+        }
+
+        .logo {
+            /* Julie */
+            display: flex;
+            width: 100%;
+
+            top: 30px;
+
+            align-items: center;
+            justify-content: center;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 28px;
+            /* identical to box height */
+
+            letter-spacing: -0.02em;
+
+            color: #111111;
+        }
+
+        .signin {
+            /* sign in */
+            width: 100px;
+
+            position: flex;
+            margin-right: 123px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 18px;
+            text-align: right;
+            letter-spacing: -0.02em;
+
+            color: #111111;
+        }
+        
+      BackGroundBlock {
+        width: 100%;
+        height: flex;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 50px;
+      }
+
+      BackGroundBlock2 {
+        width: 100%;
+          height: flex;
+          display: flex;
+        background-color: #f8f8f8;
+        color: black;
+        font-size: 50px;
+      }
+
+      InputBlock {
+        width: 100%;
+        height: full;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
+
+      TitleBlock {
+        width: 100%;
+        height: 100px;
+        font-weight: 600;
+        padding-left: 200px;
+        display: flex;
+        background-color: #f8f8f8;
+        color: black;
+      }
+
+      TitleBlock2 {
+        height: 100px;
+        font-weight: 600;
+        padding-left: 200px;
+        display: flex;
+        background-color: #f8f8f8;
+        color:#34cd63;
+      }
+
+      TitleBlock3 {
+        display: flex;
+        background-color: #f8f8f8;
+        padding-left: 2000px;
+        align-items: right;
+        justify-content: right;
+      }
+
+      TopBlock {
+        width: 100%;
+        height: 80px;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 40px;
+      }
+
+      ButtonLine {
+        display: 100%;
+        margin-left: 6%;
+        margin-right: 0%;
+        width: 100%;
+        font-family: "Roboto";
+        font-weight: 200;
+        color: white;
+        padding-bottom: 0px;
+        display: flex;
+      }
+
+      Triangle {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+
+      ButtonBlock {
+        outline: none;
+        border: none;
+
+        border-radius: 10px;
+
+        width: 350px;
+        height: 350px;
+
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 40px;
+        margin-right: 40px;
+
+        background-color: white;
+        color: black;
+
+        font-size: 10px;
+        font-family: "Roboto";
+        font-weight: 200;
+
+        -webkit-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+        box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
+      }
+
+      TextBox {
+          width: 300px;
+        font-size: 30px;
+        font-family: "Roboto";
+        font-weight: 900;
+        color: black;
+        padding-bottom: 3px;
+        margin-left: 30px;
+      }
+      TextBox2 {
+        font-size: 23px;
+        font-family: "Roboto";
+        font-weight: 500;
+        color: black;
+        padding-bottom: 3px;
+        margin-left: 30px;
+      }
+      TextBox3 {
+        font-size: 20px;
+        font-family: "Roboto";
+        font-weight: 200;
+        color: black;
+        padding-bottom: 3px;
+        margin-left: 30px;
+      }
+
+      Divider {
+        border-bottom: 0px solid rgba(138, 138, 138, 0.5);
+        margin-bottom: 60px;
+      }
+
+      Divider2 {
+        width: 100%;
+        height: 100px;
+        background-color: #f8f8f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        font-size: 40px;
+      }
+
+      emogi {
+width:550px;
+height: 140px;
+margin-left: 200px;
+padding-left: 50px;
+padding-top: 20px;
+background: #FFFFFF;
+box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+border-radius: 40px;
+font-size: 80px;
+position: absolute;
+left: 0px;
+top: 1170px;
+      }
+
+      #circle {
+      width: 900px;
+      height: 900px;
+      -webkit-border-radius: 450px;
+      -moz-border-radius: 450px;
+      border-radius: 450px;
+      background: #34cd63;
+      border : 0 0 0 0;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 800px;
+top: 200px;
+    }
+
+    #circle2 {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      border : 0 0 0 0;
+      background: white;
+      color: #34cd63;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+
+        vertical-align: center;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 1900px;
+top: 1170px;
+font-size : 70px;
+    }
+
+    #circle3 {
+      width: 150px;
+      height: 150px;
+      -webkit-border-radius: 75px;
+      -moz-border-radius: 75px;
+      border-radius: 75px;
+      background: white;
+      color: #34cd63;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size : 70px;
+        vertical-align: center;
+      position: absolute;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+left: 2100px;
+top: 1170px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <TopBlock></TopBlock>
+    
+      <div id="circle" ></div>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script>
+        
+        <BackGroundBlock>
+            <div class="circle">
+                 <g transform="translate(110,110)">
+                     
+                    <circle r="100" class="e-c-base"><div class="display-remain-time" style="position: absolute;
+                        left: 1000px;
+                        top: 520px;color:white; font-size:200px; display: flex;
+                      align-items: center;
+                      justify-content: center;">01:30</div></circle>
+                    <g transform="rotate(-90)">
+                       <circle r="100" class="e-c-progress">
+                            <g id="e-pointer">
+                              <circle cx="100" cy="0" r="8" class="e-c-pointer">
+                                  
+                              </circle>
+                           </g>
+                       </circle>
+                    </g>
+                    <button>
+                      <div class="controlls" style="display: flex;
+                      align-items: center;
+                      justify-content: center;">
+                        <button class="play" id="pause" style="display: flex;
+                        align-items: center;
+                        justify-content: center;"></button>
+                      </div>
+                    </button>
+                 </g>
+              </svg>
+            </div>
+            <div style="position: absolute;
+            left: 1070px;
+            top: 730px;color:white; font-size:70px; display: flex;font-weight: 600;
+          align-items: center;
+          justify-content: center;">Break Time</div>
+        </BackGroundBlock>
+        <Divider2></Divider2>
+      <TopBlock></TopBlock>
+      <BackGroundBlock2>
+      <emogi>🙈 😿 😄   ▼</emogi>
+      <button id="circle2"  value="BACK" onClick="history.go(-1)">&lt;</button>
+      <button id="circle3"  onclick="location.href='final_vote.html'">&gt;</button>
+    </BackGroundBlock2>
+    
+        
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+    </script>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+    </Divider2>
+    <script type="text/javascript">
+        //circle start
+    let progressBar = document.querySelector('.e-c-progress');
+    let indicator = document.getElementById('e-indicator');
+    let pointer = document.getElementById('e-pointer');
+    let length = Math.PI * 2 * 100;
+    
+    progressBar.style.strokeDasharray = length;
+    
+    function update(value, timePercent) {
+    var offset = - length - length * value / (timePercent);
+    progressBar.style.strokeDashoffset = offset; 
+    pointer.style.transform = `rotate(${360 * value / (timePercent)}deg)`; 
+    };
+    
+    //circle ends
+    const displayOutput = document.querySelector('.display-remain-time')
+    const pauseBtn = document.getElementById('pause');
+    const setterBtns = document.querySelectorAll('button[data-setter]');
+    
+    let intervalTimer;
+    let timeLeft;
+    let wholeTime = 900; // manage this to set the whole time 
+    let isPaused = false;
+    let isStarted = false;
+    
+    
+    update(wholeTime,wholeTime); //refreshes progress bar
+    displayTimeLeft(wholeTime);
+    
+    function changeWholeTime(seconds){
+    if ((wholeTime + seconds) > 0){
+    wholeTime += seconds;
+    update(wholeTime,wholeTime);
+    }
+    }
+    
+    for (var i = 0; i < setterBtns.length; i++) {
+    setterBtns[i].addEventListener("click", function(event) {
+    var param = this.dataset.setter;
+    switch (param) {
+     case 'minutes-plus':
+         changeWholeTime(1 * 60);
+         break;
+     case 'minutes-minus':
+         changeWholeTime(-1 * 60);
+         break;
+     case 'seconds-plus':
+         changeWholeTime(1);
+         break;
+     case 'seconds-minus':
+         changeWholeTime(-1);
+         break;
+    }
+    displayTimeLeft(wholeTime);
+    });
+    }
+    
+    function timer (seconds){ //counts time, takes seconds
+    let remainTime = Date.now() + (seconds * 1000);
+    displayTimeLeft(seconds);
+    
+    intervalTimer = setInterval(function(){
+    timeLeft = Math.round((remainTime - Date.now()) / 1000);
+    if(timeLeft < 0){
+    clearInterval(intervalTimer);
+    isStarted = false;
+    setterBtns.forEach(function(btn){
+    btn.disabled = false;
+    btn.style.opacity = 1;
+    });
+    displayTimeLeft(wholeTime);
+    pauseBtn.classList.remove('pause');
+    pauseBtn.classList.add('play');
+    return ;
+    }
+    displayTimeLeft(timeLeft);
+    }, 1000);
+    }
+    function pauseTimer(event){
+    if(isStarted === false){
+    timer(wholeTime);
+    isStarted = true;
+    this.classList.remove('play');
+    this.classList.add('pause');
+    
+    setterBtns.forEach(function(btn){
+    btn.disabled = true;
+    btn.style.opacity = 0.5;
+    });
+    
+    }else if(isPaused){
+    this.classList.remove('play');
+    this.classList.add('pause');
+    timer(timeLeft);
+    isPaused = isPaused ? false : true
+    }else{
+    this.classList.remove('pause');
+    this.classList.add('play');
+    clearInterval(intervalTimer);
+    isPaused = isPaused ? false : true ;
+    }
+    }
+    
+    function displayTimeLeft (timeLeft){ //displays time on the input
+    let minutes = Math.floor(timeLeft / 60);
+    let seconds = timeLeft % 60;
+    let displayString = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    displayOutput.textContent = displayString;
+    update(timeLeft, wholeTime);
+    }
+    
+    pauseBtn.addEventListener('click',pauseTimer);
+         </script>
+  </body>
+</html>

@@ -1,27 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <style>
-
-        .urlCopyBtn {
-            font-weight:normal;			    
-            color:gray;
-            text-decoration:none;
-            font-size:12px;	
-        }
-        .urlCopyBtnIcon {
-            border:1px solid gray;
-            border-radius:3px;
-            padding:0px 2px 1px 2px;
-            color:white;
-            background-color:gray;	
-        }
-        .urlCopyBtnIcon a {
-            color:white;
-        }
-    
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta charset="utf-8" />
     <meta name="description" content="" />
     <meta
@@ -30,7 +10,7 @@
         width=device-width,
         initial-scale=1"
     />
-    <title>link_copy.html</title>
+    <title>final_vote.html</title>
     <style type="text/css">
     header {
             width: 95%;
@@ -109,10 +89,18 @@
       BackGroundBlock {
         width: 100%;
         height: flex;
-        background-color: #ffc107;
+        background-color: #f8f8f8;
         display: flex;
         align-items: center;
         justify-content: center;
+        color: black;
+        font-size: 50px;
+      }
+
+      BackGroundBlock2 {
+          width: flex;
+          height: flex;
+        background-color: #f8f8f8;
         color: black;
         font-size: 50px;
       }
@@ -130,16 +118,33 @@
         width: 100%;
         height: 100px;
         font-weight: 600;
+        padding-left: 200px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: #f8f8f8;
         color: black;
+      }
+
+      TitleBlock2 {
+        height: 100px;
+        font-weight: 600;
+        padding-left: 200px;
+        display: flex;
+        background-color: #f8f8f8;
+        color:#34cd63;
+      }
+
+      TitleBlock3 {
+        display: flex;
+        background-color: #f8f8f8;
+        padding-left: 2000px;
+        align-items: right;
+        justify-content: right;
       }
 
       TopBlock {
         width: 100%;
-        height: 300px;
-        background-color: #ffc107;
+        height: 80px;
+        background-color: #f8f8f8;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -152,7 +157,7 @@
         margin-left: 0%;
         margin-right: 0%;
         width: 100%;
-        font-family: "Nanum Gothic";
+        font-family: "Roboto";
         font-weight: 200;
         color: white;
         padding-bottom: 0px;
@@ -163,28 +168,32 @@
         vertical-align: center;
       }
 
+      Triangle {
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+
       ButtonBlock {
         outline: none;
         border: none;
 
         border-radius: 10px;
 
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 350px;
 
         margin-bottom: 0%;
         margin-top: 0%;
-        margin-left: 3%;
-        margin-right: 3%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-left: 40px;
+        margin-right: 40px;
 
         background-color: white;
         color: black;
 
         font-size: 10px;
-        font-family: "Nanum Gothic";
+        font-family: "Roboto";
         font-weight: 200;
 
         -webkit-box-shadow: 10px 10px 9px -9px rgba(0, 0, 0, 0.05);
@@ -193,14 +202,29 @@
       }
 
       TextBox {
-        font-size: 25px;
-        font-family: "Nanum Gothic";
-        font-weight: 700;
+          width: 300px;
+        font-size: 30px;
+        font-family: "Roboto";
+        font-weight: 900;
         color: black;
         padding-bottom: 3px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-left: 30px;
+      }
+      TextBox2 {
+        font-size: 23px;
+        font-family: "Roboto";
+        font-weight: 500;
+        color: black;
+        padding-bottom: 3px;
+        margin-left: 30px;
+      }
+      TextBox3 {
+        font-size: 20px;
+        font-family: "Roboto";
+        font-weight: 200;
+        color: black;
+        padding-bottom: 3px;
+        margin-left: 30px;
       }
 
       Divider {
@@ -211,7 +235,7 @@
       Divider2 {
         width: 100%;
         height: 100px;
-        background-color: #ffc107;
+        background-color: #f8f8f8;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -219,47 +243,57 @@
         font-size: 40px;
       }
     </style>
+    <script>
+        const title1 = document.querySelector("#title1");
+ 
+ // handleResize 함수를 만든다.
+ function handleClick(){
+     title1.style.border.color = 'blue';
+ }  
+  
+ // id="title" 을 클릭하면 이벤트를 발생시킨다. 
+ // 이벤트의 내용은 handleClick()함수에 담고 있다.
+ title1.addEventListener("click", handleClick);
+    </script>
   </head>
   <body>
-    <>
-    <TopBlock></TopBlock>
-    <BackGroundBlock>
-      <Bounce>
-        <TitleBlock>
-          <span>Share link with team / Participants</span>
-        </TitleBlock>
-      </Bounce>
-    </BackGroundBlock>
-    <BackGroundBlock>
-        <Bounce>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <BackGroundBlock2>
           <TitleBlock>
-            <span>Copy the link below.</span>
+            <span>Vote Result</span>
           </TitleBlock>
-        </Bounce>
+      </BackGroundBlock2>
+      <TopBlock></TopBlock>
+      <BackGroundBlock2>
+          <TitleBlock3>
+          <button style="background: #C8D961; width: 200px; height: 80px;
+          box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+          border-radius: 40px; color: white; font-family: 'Roboto'; font-size: 35px;" onclick="location.href='meeting_report.html'">NEXT</button>
+        </TitleBlock3>
+        </BackGroundBlock2>
+      <Divider2></Divider2>
+      <BackGroundBlock>
+          <ButtonLine>
+            <ButtonBlock type="button" value="버튼" id="button" onclick="document.getElementById('button').style.backgroundColor='#C8D961';">
+                <Triangle style="background-color: #EB5757;
+                color: #EB5757;">das</Triangle>
+                <ButtonLine></ButtonLine>
+                <TextBox>Corona Blue</TextBox>
+                <ButtonLine></ButtonLine>
+                <TextBox2>JH</TextBox2>
+                <ButtonLine></ButtonLine>
+                <Divider></Divider>
+                <TextBox3>I need some coffee...</TextBox3>
+            </ButtonBlock>
+          </ButtonLine>
       </BackGroundBlock>
-    <Divider2></Divider2>
-    <BackGroundBlock>
-        <fieldset style="font-size:20px; margin:50px; padding:30px">
-            <legend style="font-size:30px">Current URL</legend>
-            <script type="text/javascript">
-                var s = location.href;
-                document.writeln(s);
-                </script>
-        </fieldset>
-        
-    </BackGroundBlock>
-    <TopBlock></TopBlock>
-    <TopBlock></TopBlock>
-  </>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+      <TopBlock></TopBlock>
+    </Divider2>
   </body>
-  <script type="text/javascript">
-    $('.urlCopyBtn').click(function(){	
-        var urlAddress= $('#urlAddress');
-        urlAddress.css('display','block').select();
-        document.execCommand("Copy");
-        urlAddress.css('display','none');
-        alert('URL 주소가 복사 되었습니다');	
-        return false;
-    });
-    </script>
 </html>
