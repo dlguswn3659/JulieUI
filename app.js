@@ -35,7 +35,7 @@ var ment1 = require("./router/ment1");
 var introduce1 = require("./router/introduce1");
 var introduce2 = require("./router/introduce2");
 var people = require("./router/people");
-var hello = require("./router/hello");
+var hello = require("./router/hello"); 
 
 var connection = mysql.createConnection({
   host: "localhost",
