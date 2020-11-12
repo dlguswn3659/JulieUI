@@ -4,7 +4,7 @@
 nodemon app.js
 ```
 
-위의 명령어를 실행한 뒤
+위의 명령어를 실행한 뒤 
 
 ```
 http://localhost:3000/hello.html
@@ -12,7 +12,7 @@ http://localhost:3000/hello.html
 
 에 접속하면 회의 환경 설정이 완료된 직후의 첫 화면이다.
 회의 환경 설정 로직을 확인하려면
-
+m
 ```
 http://localhost:3000/process_select.html
 ```
