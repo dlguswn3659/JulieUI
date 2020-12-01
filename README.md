@@ -21,3 +21,6 @@ http://localhost:3000/process_select.html
 또한 해당 경로의 디자인은 최종 디자인이 적용되지 않은 상태이며, 디자인은 팀 피그마에 있다.
 
 ![image](https://user-images.githubusercontent.com/39727494/96348523-723b2a00-10e4-11eb-84d3-d66256308f58.png)
+
+# 설명 영상
+https://youtu.be/avV6mogS514
